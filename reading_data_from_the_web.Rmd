@@ -60,8 +60,15 @@ brfss_df =
   GET("https://chronicdata.cdc.gov/resource/acme-vg9e.csv", 
       query = list("$limit" = 5000)) |>
   content()
-
 ```
+
+try it now
+```{r}
+poke_df = 
+  GET("https://pokeapi.co/api/v2/pokemon/ditto") |>
+  content()
+```
+sometimes it works sometimes it does not 
 
 
 
